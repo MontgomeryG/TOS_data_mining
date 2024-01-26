@@ -37,8 +37,10 @@ XL_Cell_LAST = oSheet.Cells(LAST, 1)
 
 
 ' 5
-' Now we get the excel formulas that call on the tos api. We could copy the rows from TOS live streaming data, and then click "export to Excel". 
-' When we export, the formulas will be copied to our clipboard, and when we paste them into Excel they will update with the live market.
+' Now we get the excel formulas that call on the tos api. We could copy the rows from TOS live streaming data,
+' and then click "export to Excel". 
+' When we export, the formulas will be copied to our clipboard,
+' and when we paste them into Excel they will update with the live, 3-sec-interval data.
 ' Define Cell Formulas
 XL_Cell_1.Formula = "=RTD(""tos.rtd"", , ""LAST"", ""QQQ"" )"
 XL_Cell_2.Formula = "=RTD(""tos.rtd"", , ""LAST"", ""AAPL"" )"
@@ -51,8 +53,7 @@ XL_Cell_LAST.Formula = "=RTD(""tos.rtd"", , ""INDICATOR2"", ""TICKER2"" )"
 
 
 ' 6
-' Now we are getting the data from the temp Excel file we are putting the data onto
-' We are saving those data columns and then we will 
+' Load values returned from RTDServer
 Data_Col_1 = CStr(XL_Cell_1.Value)
 Data_Col_2 = CStr(XL_Cell_2.Value)
 ' ...
@@ -66,7 +67,7 @@ strCSV_Data = CStr(tsTimeStamp) & ", " & Data_Col_1 & ", " & Data_Col_2 & ", " &
 
 ' The idea is that I am capturing only the columns that update, and not indicators, but rather ratios of the independent variables being generated continuously
 
-' Columns I want: Symbol, Mark, Theoretical Price, Last, Last Size, Bid Size, Bid, Ask, Ask Size, Net Change, %Change, Mark % Change, P/C Ratio,
+' Columns we will capture: Symbol, Mark, Theoretical Price(excel formula export failed), Last, Last Size, Bid Size, Bid, Ask, Ask Size, Net Change, %Change, Mark % Change, P/C Ratio,
 ' Call Sizzle Index, Put Sizzle Index, Sizzle Index, Back Expected Move, Front Expected Move, Expected Move Diff,  Implied Volatility, Spreads
 ' Market Maker Move, MarketSentiment, Volume
 
