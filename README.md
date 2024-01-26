@@ -41,10 +41,12 @@ These indicators were thoughtfully selected. Think Or Swim's platform offers 100
 
 We will seek to update these indicators as well, since this is the first iteration of this project. After some time, and possibly after we implement our neural networks trading algorithm on this data, I hypothesize that we will be able to cut out even more indicators. We need our future algorithm's performance to help us determine which of the above to keep. And we may also spend some time going back through TOS's indicators and to ensure that we haven't missed any other primary variables.
 
-Examples of indicators that were omitted were things like VWAP, SMA, EMA, MACD, and Bollinger Bands, since we will be able to derive these indicators from the indepent variables that we are gathering with this program. 
+Examples of indicators that were omitted include VWAP, SMA, EMA, MACD, and Bollinger Bands, since we will be able to derive these indicators from the indepent variables that we are gathering with this program. 
 
 Given 521 unique symbols in the S&P500 union the Nasdaq100.
+
 Given 22 unique indicators from TOS.
+
 521 x 22 = 11462
 
 We will, of course, use iteration to generate these 11462 columns. We need 7 different lists of these 11462 elements. Each list we will copy and paste into the Visual Basics code developed by brtnsmth, in place of the 21 columns brtnsmth includes in their public edition. 
