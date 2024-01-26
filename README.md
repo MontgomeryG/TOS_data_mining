@@ -39,7 +39,7 @@ The columns are also derived from the following 22 indicators: MARK, LAST, LAST_
 
 These indicators were thoughtfully selected. Think Or Swim's platform offers 100s of indicators. The indicators included in this project were selected because they are thought to be indepent variables. We don't want redundant information that will slow down our programs and take up too much space on our harddrive. 
 
-We will seek to update these indicators as well, since this is the first iteration of this project. After some time, and possibly after we implement our neural networks trading algorithm on this data, I hypothesize that we will be able to cut out even more indicators. We need our future algorithm's performance to help us determine which of the above to keep. And we may also spend some time going back through TOS's indicators and ensuring that we haven't missed any other primary variables.
+We will seek to update these indicators as well, since this is the first iteration of this project. After some time, and possibly after we implement our neural networks trading algorithm on this data, I hypothesize that we will be able to cut out even more indicators. We need our future algorithm's performance to help us determine which of the above to keep. And we may also spend some time going back through TOS's indicators and to ensure that we haven't missed any other primary variables.
 
 Examples of indicators that were omitted were things like VWAP, SMA, EMA, MACD, and Bollinger Bands, since we will be able to derive these indicators from the indepent variables that we are gathering with this program. 
 
