@@ -50,3 +50,5 @@ Given 22 unique indicators from TOS.
 521 x 22 = 11462
 
 We will, of course, use iteration to generate these 11462 columns. We need 7 different lists of these 11462 elements. Each list we will copy and paste into the Visual Basics code developed by brtnsmth, in place of the 21 columns brtnsmth includes in their public edition. 
+
+Let's take a look at the data that we need to make. (see 'data_to_make.vb')
