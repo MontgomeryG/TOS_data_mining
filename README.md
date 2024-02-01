@@ -52,3 +52,26 @@ Given 22 unique indicators from TOS.
 We will, of course, use iteration to generate these 11462 columns. We need 7 different lists of these 11462 elements. Each list we will copy and paste into the Visual Basics code developed by brtnsmth, in place of the 21 columns brtnsmth includes in their public edition. 
 
 Let's take a look at the data that we need to make. (see 'data_to_make.vb')
+
+
+
+
+TO-DO: 
+We have all calls properly made. 
+Paste each element in the right place. Make sure the format at the end is ok.
+    - In the future I want to remove the issue with having to copy and paste all those new columns and rows in the right place.
+        - It is not that hard to do if you know what you are doing... but it is weird if not.
+        - I want the end goal to be a website where people can select their stock(s) and indicator(s) and being to write data onto their workspace.
+
+
+First app:
+App will allow users to pick a window of time.
+Users select from a dropdown a stock in S&P or NQ they want to see.
+We show them the 3 second interval data for that stock at that particular time. All columns.
+
+Then we graph some of the columns. (price)...
+
+Also, we should allow the user to choose which stock they want to use this program to gather independent variables.
+
+
+Add clear instructions as to how to use this application, which tools are required to do so.
